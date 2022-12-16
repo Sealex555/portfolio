@@ -1,0 +1,201 @@
+body{
+    background-color: #333333;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index:10;
+    background-color: black;
+}
+
+header *{
+    height: 100%;
+}
+
+#logoPage,#logoPage img{
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header>*{
+    height:70px;
+}
+
+#navFullSize{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 800px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#navBurgerSize{
+    display: inline-block;
+    position:relative;
+    top:0px;
+    right:0px;
+    
+}
+
+#openBurger{
+    display: none;
+}
+
+
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:0;
+    padding:0;
+    flex-basis:800px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.menu li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis:25%;
+    flex-grow:1;
+    flex-shrink: 0;
+}
+
+#actif{
+    background-color: tomato;
+}
+
+.menu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    transition: all .1s;
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    text-shadow: 0 0 0.2em white;
+    background-color: rgb(20, 20, 20);
+}
+
+.menu #actif a:hover{
+    background-color: rgb(247, 122, 100);
+}
+
+@media only screen and (width>=800px) {
+    #navFullSize{
+        display: flex;
+    }
+
+    #navBurgerSize{
+        display: none;
+    }
+    #openBurger{
+        display: none;
+    }
+}
+
+@media only screen and (width<900px) {
+    header{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap:10px;
+    }
+
+    #navFullSize{
+        flex-basis: 50px;
+        display: flex;
+    }
+
+    #navFullSize ul{
+        flex-basis: 80vw;
+    }
+
+    #navBurgerSize, #openBurger, #burgerMenuContainer{
+        display: none;
+    }
+}
+
+@media only screen and (width<768px) {
+    header{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap:0px;
+    }
+
+    #navFullSize{
+        flex-basis: 50px;
+        display: none;
+    }
+
+    #navBurgerSize{
+        display:flex;
+        overflow: hidden;
+        height: fit-content;
+    }
+
+    #burgerMenuContainer{
+        position: relative;
+        display: block;
+        height:fit-content;
+        margin-bottom: 10px;
+    }
+
+    #openBurger{
+        position:absolute;
+        top:0px;
+        right:0px;
+        transform: translate(42%,70%);
+        z-index:11;
+    }
+
+    #navBurgerSize:checked+#openBurger{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .listBurger{
+        list-style: none;
+    }
+    
+    .itemBurger{
+        width:80vw;
+        height:30px;
+        background-color: black;
+    }
+    
+    .itemBurger a:hover{
+        background-color: rgb(20, 20, 20);
+    }
+
+    .itemBurger#actif a:hover{
+        background-color: rgb(247, 122, 100);
+    }
+    
+    .itemBurger a{
+        text-decoration: none;
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

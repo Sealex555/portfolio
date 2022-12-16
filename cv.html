@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <title>Accueil</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="icon" href="img/onglet.png">
+        </head>
+        <body>
+            <header>
+                <a id="logo_page" href="index.html">YC</a>
+                <nav id="nav-menu">
+                    <ul class="menu">
+                        <li><a class="page" href="index.html">Accueil</a></li>
+                        <li><a class="page" href="who.html">Qui-suis-je ?</a></li>
+                        <li id="actif"><a class="page" href="cv.html">Mon cv</a></li>
+                        <li><a class="page" href="projet.html">Mes projets</a></li>
+                        <li><a class="page" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav id="nav-social">
+                    <ul class="social">
+                        <li><img class="logo" src="img/contact/facebook.png" alt=""><a href="https://www.facebook.com/Sealex555/" target="_blank">Facebook</a></li>
+                        <li><img class="logo" src="img/contact/twitter.png" alt=""><a href="https://twitter.com/Yann_Chastagner" target="_blank">Twitter</a></li>
+                        <li><img class="logo" src="img/contact/instagram.png" alt="l-ins"> <a href="https://www.instagram.com/yann.chastagner/" target="_blank">Instagram</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="main_cv">
+                <aside class="as_cv">
+                    <img class="cv_photo" src="img/pp.jpg" alt="YC">
+                    <div class="as_global">
+                        <h1>CHASTAGNER Yann</h1>
+                        <div class="as_infos">
+                            <img class="cv_icon" src="img/cv/aside/tel.png" alt="tel : ">
+                            <a href="tel:+33 7 82 17 37 83">+33 7 82 17 37 83</a>
+                        </div>
+                        <div class="as_infos">
+                            <img class="cv_icon" src="img/cv/aside/mail.png" alt="mail : ">
+                            <a href="mailto:yann.chastagner@gmail.com">yann.chastagner@gmail.com</a>
+                        </div>
+                        <div class="as_infos">
+                            <img class="cv_icon" src="img/cv/aside/poste.png" alt="courrier : ">
+                            <div class="cv_as_lieu">
+                                <p class="cv_as_adresse">42, avenue Alsace-Lorraine</p>
+                                <p class="cv_as_adresse">38000 Grenoble</p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <section class="cv_content">
+                    <h1>Curriculum vitae</h1>
+                    <!--
+                    <nav class="cv_nav">
+                        <ul class="cv_ul">
+                            <li><a href="#formations_anchor">Formations</a></li>
+                            <li><a href="#experience_anchor">Expériences professionelles</a></li>
+                        </ul>
+                    </nav>
+                    <br id="formations_anchor">
+                    -->
+                    <article id="formations">
+                        <h2>Formations</h2>
+                        <section class="list_item_cv">
+                            <div class="item_cv">
+                                <h3>BUT Informatique</h3>
+                                <hr>
+                                <span>2022 - actuel</span>
+                                <div class="lieu_item_cv">
+                                    <a class="lieu_item_cv" href="https://iut2.univ-grenoble-alpes.fr/" target="_blank">IUT2 Université Grenoble Alpes</a>
+                                    <p class="ville_item_cv">Grenoble - Isère</p>
+                                </div>
+                            </div>
+                            <div class="item_cv">
+                                <h3>CPGE MP2I</h3>
+                                <hr>
+                                <span>2021 - 2022</span>
+                                <div class="lieu_item_cv">
+                                    <a class="lieu_item_cv" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjHnaSC4sn7AhWJYKQEHWAdBC8QFnoECBAQAQ&url=https%3A%2F%2Flycee-champollion.fr%2F&usg=AOvVaw2yR10nrHUh2T9hnrdcMSn4" target="_blank">Lycée Champollion</a>
+                                    <p class="ville_item_cv">Grenoble - Isère</p>
+                                </div>
+                            </div>
+                            <div class="item_cv">
+                                <h3>Baccalauréat général</h3>
+                                <hr>
+                                <span>2019 - 2021</span>
+                                <div class="lieu_item_cv">
+                                    <a class="lieu_item_cv" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwil9e7q4cn7AhVQQaQEHTu7CWwQFnoECA4QAQ&url=https%3A%2F%2Frene-descartes.ent.auvergnerhonealpes.fr%2F&usg=AOvVaw3QyESSPa14tzj5vyrUkYSm" target="_blank">Lycée René Descarte</a>
+                                    <p class="ville_item_cv">Saint-Genis-Laval - Rhône</p>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    <!--            <br id="experience_anchor">         -->
+                    <article id="experience">
+                        <h2>Expériences professionelles</h2>
+                        <section class="list_item_cv">
+                            <div class="item_cv">
+                                <h3>Stage</h3>
+                                <hr>
+                                <span>2022</span>
+                                <p class="stage_sujet">Sujet : représentation des données textuelles en informatique</p>
+                                <div class="lieu_item_cv">
+                                    <a class="lieu_item_cv" href="https://eric.msh-lse.fr/">Laboratoire Eric</a>
+                                    <p class="ville_item_cv">Affilié Université Lyon 1 et Université Lyon 2 - Lyon - Rhône</p>
+                                </div>
+                            </div>
+                            <div class="item_cv">
+                                <h3>Stage</h3>
+                                <hr>
+                                <span>2018</span>
+                                <p class="stage_sujet">Sujet : création d'un logiciel de gestion de base de données de médiathèques</p>
+                                <div class="lieu_item_cv">
+                                    <a class="lieu_item_cv" href="https://www.gminvent.fr/">GMInvent</a>
+                                    <p class="ville_item_cv">Chaponost - Rhône</p>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                </section>
+            </main>
+            <footer>
+                <p>© 2022 Tous droits réservés - Yann Chastagner - 42 avenue Alsace-Lorraine - 38000 Grenoble</p>
+            </footer>
+        </body>
+    </html>
